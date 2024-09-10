@@ -1,3 +1,45 @@
+@font-face {
+    font-family: 'Cygre';
+    src: url('/assets/fonts/Cygre/Cygre-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cygre';
+    src: url('/assets/fonts/Cygre/Cygre-BookIt.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('/assets/fonts/Circe/Circe-Regular.eot');
+    src: local('Circe'), local('Circe-Regular'),
+    url('/assets/fonts/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Circe/Circe-Regular.woff2') format('woff2'),
+    url('/assets/fonts/Circe/Circe-Regular.woff') format('woff'),
+    url('/assets/fonts/Circe/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Circe';
+    src: url('/assets/fonts/Circe/Circe-Bold.eot');
+    src: local('Circe Bold'), local('Circe-Bold'),
+    url('/assets/fonts/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Circe/Circe-Bold.woff2') format('woff2'),
+    url('/assets/fonts/Circe/Circe-Bold.woff') format('woff'),
+    url('/assets/fonts/Circe/Circe-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -102,3 +144,278 @@ select {
 
 
 
+.header--cont {
+    display: flex;
+    margin: 20px 0 120px;
+    padding: 0 40px;
+    border-top: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid rgb(189, 189, 189);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.header--cont .logo {
+    width: 194.42px;
+    margin: 20px 16px 20px 0;
+    padding-right: 16px;
+    border-right: 1px solid rgb(189, 189, 189);
+}
+
+.header--cont .desc {
+    color: rgb(130, 130, 130);
+    font-family: Cygre, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 105%;
+
+    max-width: 140px;
+    margin: 20px 20px 20px 0;
+}
+
+.header--cont .nav-link {
+    color: rgb(51, 51, 51);
+    font-family: Circe, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+
+    padding: 0 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    border-left: 1px solid rgb(189, 189, 189);
+
+    transition: all 0.3s;
+}
+
+.header--cont .nav-link:hover {
+    border: 1px solid rgb(55, 112, 48);
+    color: rgb(255, 255, 255);
+    background: rgb(55, 112, 48);
+}
+
+.header--cont .nav-link.green {
+    border: 1px solid rgb(55, 112, 48);
+    color: rgb(255, 255, 255);
+    background: rgb(55, 112, 48);
+    min-width: 248px;
+}
+
+.header--cont .nav-link.green:hover {
+    border: none;
+    border-left: 1px solid rgb(189, 189, 189);
+    border-right: 1px solid rgb(189, 189, 189);
+    color: rgb(51, 51, 51);
+    background: #fff;
+    min-width: 248px;
+}
+
+.header--cont .contacts--cont {
+    display: flex;
+    flex-direction: column;
+    margin-left: 34px;
+    gap: 4px;
+}
+
+.header--cont .contacts--cont .tel {
+    color: rgb(51, 51, 51);
+    font-family: Circe, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 110%;
+
+    border-bottom: none;
+    transition: all .3s;
+    width: max-content;
+}
+
+.header--cont .contacts--cont .email {
+    color: rgb(51, 51, 51);
+    font-family: Circe, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+
+    border-bottom: none;
+    transition: all .3s;
+    width: max-content;
+}
+
+.header--cont .contacts--cont .email:hover, .header--cont .contacts--cont .tel:hover {
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+
+
+.top--block {
+    display: flex;
+    gap: 33px;
+    max-width: 1440px;
+    margin: 0 auto 100px;
+    min-height: 686px;
+    padding: 0 40px;
+}
+
+.top--block .main-img {
+    width: 737px;
+    height: max-content;
+}
+
+.top--block .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.top--block .col h2 {
+    max-width: 588px;
+    color: rgb(51, 51, 51);
+    font-family: Circe, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -1%;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+
+.top--block .col ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 44px;
+    padding: 0 0 0 0;
+
+    max-width: 537px;
+    list-style-type: none;
+}
+
+.top--block .col ul li {
+    color: rgb(64, 64, 64);
+    font-family: Circe, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.top--block .col ul li::before {
+    content: url("../images/top-block/li-arrow.svg");
+    margin-top: -8px;
+}
+
+.default-input {
+    height: 61px;
+    padding: 0 20px;
+    border-radius: 40px;
+    background: rgb(247, 249, 247);
+    outline: none;
+    border: none;
+
+    color: rgb(153, 153, 153);
+    font-family: Circe, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.default-btn {
+    color: rgb(242, 242, 242);
+    font-family: Cygre, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: rgb(79, 79, 79);
+
+    border: none;
+    outline: none;
+    padding: 16px 45px;
+    cursor: pointer;
+
+    transition: background 0.3s;
+}
+
+.default-btn:hover, .default-btn:focus, .default-btn:active {
+    background: rgb(0, 0, 0);
+}
+
+.top--block .input-cont {
+    position: relative;
+}
+
+.top--block .input-cont .default-input {
+    width: 490px;
+    padding-right: 220px;
+}
+
+.top--block .input-cont .default-btn {
+    position: absolute;
+    right: 95px;
+    top: 0;
+}
+
+
+
+
+
+
+.about--block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    max-width: 1440px;
+    margin: 0 auto 100px;
+}
+
+.about--block h3 {
+    color: rgb(153, 153, 153);
+    font-family: Cygre, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+
+.about--block .col {
+    max-width: 900px;
+}
+
+.about--block .col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about--block .col h2 {
+    color: rgb(51, 51, 51);
+    font-family: Circe, sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.about--block .col .row {
+    display: flex;
+    gap: 17px;
+}
+
+.about--block .col .row p {
+    color: rgb(51, 51, 51);
+    font-family: Circe, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
