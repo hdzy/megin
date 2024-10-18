@@ -13,6 +13,14 @@
 }
 
 @font-face {
+    font-family: 'Cygre';
+    src: url('/assets/fonts/Cygre/Cygre-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Circe';
     src: url('/assets/fonts/Circe/Circe-Regular.eot');
     src: local('Circe'), local('Circe-Regular'),
@@ -176,7 +184,7 @@ select {
 
 .header--cont .nav-link {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -223,8 +231,8 @@ select {
 }
 
 .header--cont .contacts--cont .tel {
-    color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    color: rgb(55, 112, 48);
+    font-family: Cygre, sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 110%;
@@ -236,7 +244,7 @@ select {
 
 .header--cont .contacts--cont .email {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -274,7 +282,7 @@ select {
 .top--block .col h2 {
     max-width: 588px;
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 42px;
     font-weight: 700;
     line-height: 130%;
@@ -290,13 +298,13 @@ select {
     margin: 0 0 44px;
     padding: 0 0 0 0;
 
-    max-width: 537px;
+    max-width: 587px;
     list-style-type: none;
 }
 
 .top--block .col ul li {
     color: rgb(64, 64, 64);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 130%;
@@ -321,7 +329,7 @@ select {
     border: none;
 
     color: rgb(153, 153, 153);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -331,14 +339,14 @@ select {
     color: rgb(242, 242, 242);
     font-family: Cygre, sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 25px;
     height: 59px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
-    background: rgb(79, 79, 79);
+    background: rgb(0, 0, 0);
 
     border: none;
     outline: none;
@@ -348,8 +356,12 @@ select {
     transition: background 0.3s;
 }
 
-.default-btn:hover, .default-btn:focus, .default-btn:active {
-    background: rgb(0, 0, 0);
+.default-btn:hover {
+    background: rgb(169, 199, 152);
+}
+
+.default-btn:focus, .default-btn:active {
+    background: rgb(55, 112, 48);
 }
 
 .top--block .input-cont {
@@ -401,7 +413,7 @@ select {
 
 .about--block .col h2 {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 34px;
     font-weight: 700;
     line-height: 120%;
@@ -414,7 +426,7 @@ select {
 
 .about--block .col .row p {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -434,7 +446,7 @@ select {
 
 .catalog--block h2 {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 34px;
     font-weight: 700;
     line-height: 120%;
@@ -446,23 +458,23 @@ select {
     flex-wrap: wrap;
 }
 
-.catalog--block .products-row .product {
+.catalog--block .product {
     width: 320px;
     padding: 30px;
     background: rgb(250, 250, 250);
 }
 
-.catalog--block .products-row .product h3 {
+.catalog--block .product h3 {
     margin: 12px 0 24px;
 
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 110%;
 }
 
-.catalog--block .products-row .product .row {
+.catalog--block .product .row {
     display: flex;
     justify-content: space-between;
     padding-bottom: 8px;
@@ -471,15 +483,15 @@ select {
     align-items: center;
 }
 
-.catalog--block .products-row .product .row p {
-    color: rgb(0, 0, 0);
-    font-family: Circe, sans-serif;
+.catalog--block  .product .row p {
+    color: rgb(153, 153, 153);
+    font-family: Cygre, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
 }
 
-.catalog--block .products-row .product .row h4 {
+.catalog--block .product .row h4 {
     color: rgb(0, 0, 0);
     font-family: Cygre, sans-serif;
     font-size: 16px;
@@ -500,19 +512,25 @@ select {
     cursor: pointer;
     height: 50px;
 
-    color: rgb(51, 51, 51);
+    color: rgb(55, 112, 48);
     font-family: Cygre, sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
+    font-weight: 600;
+
+    transition: all .3s;
 }
 
-.order-btn:hover, .order-btn:focus, .order-btn:active {
-    font-weight: 700;
-    color: rgb(55, 112, 48);
+.order-btn:hover {
+    border: 1px solid rgb(55, 112, 48);
+    background: rgb(169, 199, 152);
 }
 
-.catalog--block .products-row .product .order-btn {
+.order-btn:focus, .order-btn:active {
+    background: rgb(55, 112, 48);
+    color: rgb(255, 255, 255);
+}
+
+.catalog--block .product .order-btn {
     margin-top: 24px;
     width: 100%;
 }
@@ -543,7 +561,7 @@ select {
 
 .contact-block .content h2 {
     color: #fff;
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 34px;
     font-weight: 700;
     line-height: 120%;
@@ -584,25 +602,24 @@ select {
 .primary-btn {
     padding: 0 20px;
     border-radius: 50px;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     height: 60px;
-    color: rgb(242, 242, 242);
+    color: rgb(55, 112, 48);
+    font-weight: 600;
     font-family: Cygre, sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 25px;
-
     border: none;
 
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
-.primary-btn:hover, .primary-btn:focus, .primary-btn:active {
-    background: #fff;
+.primary-btn:hover{
+    background: rgb(247, 249, 247);
+}
 
-    color: rgb(55, 112, 48);
-    font-weight: 700;
+.primary-btn:focus, .primary-btn:active {
+    background: rgb(169, 199, 152);
 }
 
 .contact-block .content .col .row .primary-btn {
@@ -623,7 +640,7 @@ select {
 
 .advantages-block h2 {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 34px;
     font-weight: 700;
     line-height: 120%;
@@ -639,11 +656,11 @@ select {
     width: 100%;
 }
 
-.advantages-block .cards .card.large {
+.advantages-block .card.large {
     height: 100%;
 }
 
-.advantages-block .cards .card {
+.advantages-block .card {
     height: calc(50% - 10px);
     display: flex;
     flex-direction: column;
@@ -651,26 +668,26 @@ select {
     padding: 30px;
 }
 
-.advantages-block .cards .card img {
+.advantages-block .card img {
     width: 62px;
     margin-left: auto;
     margin-bottom: auto;
 }
 
-.advantages-block .cards .card h3 {
+.advantages-block .card h3 {
     max-width: 380px;
 
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 110%;
     margin-bottom: 16px;
 }
 
-.advantages-block .cards .card p {
+.advantages-block .card p {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -692,24 +709,41 @@ select {
     text-align: center;
 
     color: rgb(0, 0, 0);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 34px;
     font-weight: 700;
     line-height: 120%;
 }
 
-.gallery-block .images {
+.title-row .gallery-controls {
+    display: flex;
+    gap: 16px;
+}
+
+.title-row .gallery-controls > img {
+    cursor: pointer;
+}
+
+.swiper-gallery {
+    width: 100%;
+}
+
+.gallery-block .swiper-gallery .swiper-slide {
     display: flex;
     gap: 20px;
-    width: 100%;
-    height: 573px;
+    flex-wrap: wrap;
 }
 
-.gallery-block .images img {
+.gallery-block .swiper-gallery .swiper-slide > img:nth-of-type(1), .gallery-block .swiper-gallery .swiper-slide > img:nth-of-type(2) {
     width: calc(50% - 10px);
+    height: 570px;
+    object-fit: cover;
 }
 
-
+.gallery-block .swiper-gallery .swiper-slide > img:nth-of-type(3), .gallery-block .swiper-gallery .swiper-slide > img:nth-of-type(4), .gallery-block .swiper-gallery .swiper-slide > img:nth-of-type(5) {
+    width: calc(33% - 9px);
+    height: 570px;
+}
 
 
 .reviews-block {
@@ -722,12 +756,12 @@ select {
     overflow: hidden;
 }
 
-.reviews-block .title-row {
+.title-row {
     display: flex;
     justify-content: space-between;
 }
 
-.reviews-block .title-row h2 {
+.title-row h2 {
     color: rgb(51, 51, 51);
     font-family: Circe, sans-serif;
     font-size: 34px;
@@ -735,12 +769,12 @@ select {
     line-height: 120%;
 }
 
-.reviews-block .title-row .reviews-controls {
+.title-row .reviews-controls {
     display: flex;
     gap: 16px;
 }
 
-.reviews-block .title-row .reviews-controls > img {
+.title-row .reviews-controls > img {
     cursor: pointer;
 }
 
@@ -766,7 +800,7 @@ select {
 
 .reviews-block .reviews-swiper .review .text {
     color: rgb(64, 64, 64);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -825,11 +859,12 @@ select {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 624px;
 }
 
 .contact-block-s .col-text h2 {
     color: #fff;
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 34px;
     font-weight: 700;
     line-height: 120%;
@@ -837,7 +872,7 @@ select {
 
 .contact-block-s .col-text p {
     color: #fff;
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 130%;
@@ -851,7 +886,7 @@ select {
 
 .pr-section h2 {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 34px;
     font-weight: 700;
     line-height: 120%;
@@ -860,7 +895,7 @@ select {
 
 .pr-section p {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
@@ -886,7 +921,7 @@ select {
     margin-bottom: 10px;
 
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 34px;
     font-weight: 700;
     line-height: 120%;
@@ -906,7 +941,7 @@ select {
 
 .contacts-block .row .block h3 {
     color: rgb(51, 51, 51);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 110%;
@@ -974,7 +1009,7 @@ select {
 
 .footer .content nav a {
     color: rgb(242, 242, 242);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 130%;
@@ -995,7 +1030,7 @@ select {
 
 .footer .content .contacts .tel {
     color: rgb(255, 255, 255);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 110%;
@@ -1004,9 +1039,321 @@ select {
 
 .footer .content .contacts .email {
     color: rgb(255, 255, 255);
-    font-family: Circe, sans-serif;
+    font-family: Cygre, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
     text-align: right;
+}
+
+.qa-section {
+    display: flex;
+    gap: 39px;
+    max-width: 1440px;
+    margin: 0 auto 100px;
+    width: 100%;
+}
+
+.qa-section > img {
+    width: 485px;
+    margin-top: auto;
+}
+
+.qa-section .col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.qa-section .col h2 {
+    color: rgb(0, 0, 0);
+    font-family: Cygre, sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+.qa-section .col .question {
+    border: 1px solid rgb(217, 217, 217);
+    background: rgb(255, 255, 255);
+}
+
+.qa-section .col .question:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+.qa-section .col .question h3 {
+    color: rgb(64, 64, 64);
+    font-family: Cygre, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 110%;
+    padding: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qa-section .col .question.active h3 {
+    padding-bottom: 16px;
+}
+
+.qa-section .col .question h3:after {
+    content: url("../images/qa/arrow.svg");
+    transform: rotate(180deg);
+    transition: all .3s ease-in-out;
+}
+
+.qa-section .col .question.active h3:after {
+    transform: rotate(0);
+}
+
+.qa-section .col .question p {
+    display: none;
+
+    /* Desktop/text */
+    color: rgb(153, 153, 153);
+    font-family: Cygre, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    padding: 0 24px 24px;
+}
+
+.qa-section .col .question.active p {
+    display: block;
+}
+
+@media screen and (min-width: 1441px) {
+    .product-swiper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .header--cont {
+        flex-wrap: wrap;
+        border-top: 0;
+        height: max-content;
+        margin: 0 0 46px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .header--cont .nav-link:not(.green), .header--cont .desc {
+        display: none;
+    }
+
+    .header--cont .nav-link.green {
+        height: 55px;
+        order: 2;
+        margin-right: 20px;
+        width: max-content;
+        min-width: 164px;
+        padding: 0;
+    }
+
+    .header--cont .logo {
+        border-right: 0;
+        order: 1;
+        margin: 0 auto 0 20px;
+        width: auto;
+        padding: 10px 0 10px 10px;
+        height: 55px;
+        border-left: 1px solid rgb(217, 217, 217);
+    }
+
+    .header--cont .contacts--cont {
+        order: 0;
+        width: 100%;
+        flex-direction: row;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 0;
+        border-bottom: 1px solid rgb(217, 217, 217);
+    }
+
+    .header--cont .contacts--cont > * {
+        padding: 10px 0;
+    }
+
+    .header--cont .contacts--cont .tel {
+        border-left: 1px solid rgb(217, 217, 217);
+    }
+
+    .header--cont .contacts--cont .email {
+        border-right: 1px solid rgb(217, 217, 217);
+    }
+
+    .top--block {
+        padding: 0 20px;
+        margin-bottom: 62px;
+        min-height: 0;
+    }
+
+    .top--block .main-img {
+        display: none;
+    }
+
+    .top--block .col {
+        width: 100%;
+    }
+
+    .top--block .col h2 {
+        font-size: 35px;
+    }
+
+    .top--block .col ul li {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .top--block .input-cont .default-input {
+        width: 100%;
+    }
+
+    .top--block .input-cont {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .top--block .input-cont .default-btn {
+        position: initial;
+        width: 100%;
+    }
+
+    .about--block {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-bottom: 60px;
+    }
+
+    .about--block h3 {
+        margin-bottom: 16px;
+    }
+
+    .about--block .col {
+        gap: 24px;
+    }
+
+    .about--block .col h2 {
+        font-size: 30px;
+    }
+
+    .about--block .col .row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .catalog--block {
+        padding: 0 20px;
+        gap: 24px;
+        margin-bottom: 60px;
+    }
+
+    .catalog--block h2 {
+        font-size: 30px;
+    }
+
+    .catalog--block .product {
+        padding: 20px;
+    }
+
+    .catalog--block .products-row {
+        display: none;
+    }
+
+    .product-swiper {
+        width: 100%;
+        position: relative;
+        padding-bottom: 35px!important;
+    }
+
+    .default-pagination {
+        --swiper-pagination-bullet-horizontal-gap: 4px;
+        --swiper-pagination-color: rgb(169, 199, 152);
+        --swiper-pagination-bullet-width: 12px;
+        --swiper-pagination-bullet-height: 12px;
+        --swiper-pagination-top: auto;
+        --swiper-pagination-bottom: 0px;
+        --swiper-pagination-bullet-inactive-color: transparent;
+    }
+
+    .default-pagination .swiper-pagination-bullet {
+        border: 1px solid rgb(169, 199, 152);
+    }
+
+    .contact-block {
+        height: max-content;
+        margin-bottom: 60px;
+    }
+
+    .contact-block .content {
+        display: flex;
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+
+    .contact-block .content h2 {
+        font-size: 30px;
+        margin-bottom: 23px;
+    }
+
+    .contact-block .content .col .row {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .contact-block .content .col .row label {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .contact-block .content .col .row input[type="checkbox"] {
+        margin-right: 0;
+    }
+
+    .advantages-block {
+        padding: 0 20px;
+        gap: 24px;
+    }
+
+    .advantages-block h2 {
+        font-size: 30px;
+    }
+
+    .advantages-block .cards {
+        display: none;
+    }
+
+    .cards-swiper .card {
+        height: 100%;
+        padding: 20px;
+        position: relative;
+        min-height: 275px;
+    }
+
+    .cards-swiper .card img {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 27px;
+    }
+
+    .cards-swiper .card h3 {
+        max-width: 203px;
+        font-size: 22px;
+    }
+
+
+    .cards-swiper {
+        width: 100%;
+        position: relative;
+        padding-bottom: 35px!important;
+    }
 }
