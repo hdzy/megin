@@ -1310,6 +1310,7 @@ select {
 
     .top--block .input-cont .default-input {
         width: 100%;
+        padding-right: 20px;
     }
 
     .top--block .input-cont {
@@ -1435,6 +1436,7 @@ select {
         position: relative;
         min-height: 275px;
         width: max-content;
+        max-width: 100%;
     }
 
     .cards-swiper .card img {
