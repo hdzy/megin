@@ -7,7 +7,6 @@
     <title>СТАТИКА</title>
 
     <link rel="stylesheet" href="./assets/styles/style.css">
-
     <script src="./assets/js/index.js" defer></script>
 
     <link
@@ -77,12 +76,12 @@
                     Крошка любой фракции всегда в наличии
                 </li>
             </ul>
-            <div class="input-cont">
-                <input class="default-input" type="tel" placeholder="+7 (999) 999 99 99">
-                <button class="default-btn">
+            <form action="#" class="input-cont">
+                <input required class="default-input tel-input" name="phone" type="tel" minlength="11" placeholder="+7 (999) 999 99 99">
+                <button type="submit" class="default-btn">
                     Оформить заказ
                 </button>
-            </div>
+            </form>
         </div>
         <img class="main-img" src="./assets/images/top-block/img.png">
     </div>
@@ -293,18 +292,18 @@
             <h2>
                 Нужна помощь в расчете объема закупки, стоимости или просто консультация специалиста?
             </h2>
-            <div class="col">
-                <input type="text" class="default-input" placeholder="+7 (999) 999 99 99">
+            <form method="post" class="col">
+                <input required type="text" name="phone" class="default-input tel-input" minlength="11" placeholder="+7 (999) 999 99 99">
                 <div class="row">
-                    <input id="terms" type="checkbox">
+                    <input required id="terms" type="checkbox">
                     <label for="terms">
                         Соглашаюсь с использованием моих персональных данных для обработки данного обращения
                     </label>
-                    <button class="primary-btn">
+                    <button type="submit" class="primary-btn">
                         Заказать звонок
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <div class="advantages-block">
@@ -639,19 +638,19 @@
                     Не упустите возможность улучшить ваши проекты с помощью качественной резиновой крошки! Свяжитесь с нами сегодня, чтобы получить консультацию, рассчитать стоимость и оформить заказ. Мы поможем вам выбрать лучшее решение для вашего бизнеса и гарантируем быструю доставку.
                 </p>
             </div>
-            <div class="col">
-                <input type="text" class="default-input" placeholder="Ваше имя*">
-                <input type="text" class="default-input" placeholder="+7 (999) 999 99 99">
+            <form action="#" class="col">
+                <input type="text" required class="default-input" name="name" placeholder="Ваше имя*">
+                <input type="text" required class="default-input tel-input" name="phone" placeholder="+7 (999) 999 99 99">
                 <div class="row">
-                    <input id="terms_f" type="checkbox">
+                    <input required id="terms_f" type="checkbox">
                     <label for="terms_f">
                         Соглашаюсь с использованием моих персональных данных для обработки данного обращения
                     </label>
-                    <button class="primary-btn">
+                    <button type="submit" class="primary-btn">
                         Заказать звонок
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <div class="qa-section">
@@ -818,24 +817,24 @@
     </footer>
 
     <div id="f-pop" class="reply-pop">
-        <div class="content">
+        <form class="content">
             <h3>Закажите консультацию</h3>
             <p class="text">
-                Пожалуйста, оставьте контактную информацию,  специалист компании свяжется с вами и ответит на все вопросы.
+                Пожалуйста, оставьте контактную информацию, специалист компании свяжется с вами и ответит на все вопросы.
             </p>
-            <input class="default-input" type="text" placeholder="Ваше имя*">
-            <input class="default-input" type="tel" placeholder="+7 (999) 999 99 99*">
+            <input class="default-input" name="name" required type="text" placeholder="Ваше имя*">
+            <input class="default-input tel-input" required name="phone" type="tel" placeholder="+7 (999) 999 99 99*">
             <div class="row">
-                <input id="pop_f" type="checkbox">
+                <input id="pop_f" required type="checkbox">
                 <label for="pop_f">
                     Соглашаюсь с использованием моих персональных данных для обработки данного обращения
                 </label>
             </div>
-            <button class="default-btn">
+            <button type="submit" class="default-btn">
                 Получить консультацию
             </button>
             <img src="./assets/images/pops/img.png" class="bg-img">
-        </div>
+        </form>
     </div>
     <div id="s-pop" class="reply-pop">
         <div class="content">
