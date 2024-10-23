@@ -85,11 +85,13 @@ document.querySelectorAll('.qa-section .question').forEach((ev) => {
 
 
 
-document.querySelector('.header--cont .nav-link.green').addEventListener('click', () => {
-    document.body.style = 'overflow: hidden';
-    document.querySelector('#f-pop').classList.add('active');
-})
+document.querySelectorAll('.header--cont .nav-link.green, .order-btn').forEach((el) => {
+    el.addEventListener('click', () => {
+        document.body.style = 'overflow: hidden';
+        document.querySelector('#f-pop').classList.add('active');
+    })
 
+})
 document.querySelector('#f-pop').addEventListener('click', (e) => {
     if (e.target.classList.contains('reply-pop')) {
         document.body.style = '';
