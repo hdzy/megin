@@ -1290,14 +1290,23 @@ select {
 
     .header--cont .contacts--cont > * {
         padding: 10px 0;
+        height: 100%;
     }
 
-    .header--cont .contacts--cont .tel {
+    .header--cont .contacts--cont > *:first-child {
         border-left: 1px solid rgb(217, 217, 217);
+    }
+
+    .header--cont .contacts--cont .row {
+        min-height: 65px;
+        flex-direction: column;
+        padding-left: 10px;
     }
 
     .header--cont .contacts--cont .email {
         border-right: 1px solid rgb(217, 217, 217);
+        line-height: 65px;
+        padding-right: 10px;
     }
 
     .top--block {
