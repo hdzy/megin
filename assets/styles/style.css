@@ -1244,6 +1244,20 @@ select {
     }
 }
 
+@media screen and (max-width: 1570px) {
+    .header--cont {
+        padding: 0 10px;
+    }
+
+    .header--cont .nav-link {
+        padding: 0 20px;
+    }
+
+    .header--cont .contacts--cont {
+        margin-left: 10px;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     .header--cont {
         flex-wrap: wrap;
